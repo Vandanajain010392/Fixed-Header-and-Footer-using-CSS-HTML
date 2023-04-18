@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header and Footer</title>
+    <!--  Creating Fixed Header and Footer and the content is centered horizontally
+        and vertically  -->
+    <style>
+        body{
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto; /*Center the div horizontally*/
+        }
+        .fixed-header, .fixed-footer{
+            width: 100%;
+            position: fixed;
+            background: rgb(236, 155, 169);
+            color: #333;
+        }
+        .fixed-header{
+            top: 0;
+            padding: 10px 150px;
+        }
+        .fixed-footer{
+            bottom: 0;
+            padding: 10px 300px;
+        }
+        nav a{
+            color:#333;
+            text-decoration: none;
+            padding:7px 25px;
+        }
+        nav a:hover{
+            background: #cdf;
+            color: blue;
+        }
+        .container p{
+            line-height: 200px; /* Create scrollbar to test positioning*/
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Excepturi, odio. Voluptas sint et exercitationem pariatur eos ad.
+        Quos quas possimus minus velit laboriosam! In nam saepe nihil odit.
+        Hic, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum repellendus in ducimus praesentium incidunt deleniti enim aliquam
+        culpa, iusto dolores vel odio impedit at, magnam ipsum. Impedit fugiat nemo maxime.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorum voluptate
+        itaque illo exercitationem quis sed blanditiis sit tempore quam excepturi,
+        quia temporibus est consequuntur at cumque totam quas sequi.</p>
+
+    
+    </div>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 1996</div>
+    </div>
+
+</body>
+</html>
